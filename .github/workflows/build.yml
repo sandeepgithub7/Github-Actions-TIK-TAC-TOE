@@ -48,7 +48,7 @@ jobs:
         run: trivy image sandeeepdocker7/tic-tac-toe:latest > trivyimage.txt
         
       - name: Deploy to container
-        run: docker run -d --name game3 -p 3000:3000 sandeeepdocker7/tic-tac-toe:latest 
+        run: docker run -d --name game4 -p 3000:3000 sandeeepdocker7/tic-tac-toe:latest 
         
       - name: Update kubeconfig
         run: aws eks --region us-east-1 update-kubeconfig --name sandeep-cluster
